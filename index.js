@@ -9,7 +9,7 @@ const MONGODB_URI = process.env.MONGODB_URI || DEFAULT_MONGO_URI
 
 
 
-MongoClient.connect(MONGDBO_URI, (err, db) => {
+MongoClient.connect(MONGODB_URI, (err, db) => {
   if (err) {
     console.error(err);
     process.exit(1);
